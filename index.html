@@ -227,7 +227,7 @@
             icon: 'question',
             title: `Vui lòng nhập mật khẩu cho ${serverName}`,
             input: 'password',
-            inputPlaceholder: 'Submit nếu không có mật khẩu',
+            inputPlaceholder: 'Password',
             showCancelButton: true,
             confirmButtonText: 'Submit',
             showLoaderOnConfirm: true,
@@ -259,7 +259,7 @@
             'Server 5': 'steam://connect/160.25.85.100:27023'
         };
 
-        if (password === passwords[currentServer] || password === '') {
+        if (password === passwords[currentServer]) {
     Swal.fire({
         title: 'Thành công!',
         text: 'Vui lòng ấn vào ô mở steam để tiếp tục',
